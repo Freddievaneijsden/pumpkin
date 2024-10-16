@@ -14,12 +14,8 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        VBox root = new VBox();
-        root.setAlignment(Pos.CENTER);
-        Button button = new Button("Hello World");
-        root.getChildren().add(button);
-        Scene scene = new Scene(root, 320, 240); //fxmlLoader
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240); //fxmlLoader
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
