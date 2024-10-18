@@ -4,6 +4,7 @@ module com.example.pumpkin {
 
 
     opens com.example.pumpkin to javafx.fxml;
+    opens com.example.pumpkin.model to javafx.fxml;
     exports com.example.pumpkin;
     exports com.example.pumpkin.controls;
     opens com.example.pumpkin.controls to javafx.fxml;

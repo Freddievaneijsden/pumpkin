@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="BOTTOM_RIGHT" spacing="20.0"
+<?import javafx.scene.image.ImageView?>
+<VBox alignment="CENTER" stylesheets="@css/styles.css"   spacing="20.0"
       xmlns="http://javafx.com/javafx/23"
       xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.example.pumpkin.HelloController">
+      fx:controller="com.example.pumpkin.controls.HelloController">
+
+    <Label text="${controller.model.scoring}"/>
+    <HBox alignment="CENTER" spacing="20.0">
+        <ImageView image="${controller.model.firstPumpkin}" onMouseClicked="#image1Clicked">
+        </ImageView>
+        <ImageView image="${controller.model.secondPumpkin}"  onMouseClicked="#image2Clicked">
+        </ImageView>
+        <ImageView image="${controller.model.thirdPumpkin}"  onMouseClicked="#image3Clicked">
+        </ImageView>
+    </HBox>
+
 </VBox>
