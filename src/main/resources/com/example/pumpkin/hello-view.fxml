@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
 
-<VBox alignment="BOTTOM_RIGHT" spacing="20.0"
-      xmlns="http://javafx.com/javafx/23"
+<Pane xmlns="http://javafx.com/javafx/23"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.example.pumpkin.controls.HelloController">
 
-</VBox>
+    <Canvas fx:id="canvas" width="600" height="600" />
+</Pane>
